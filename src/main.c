@@ -1,6 +1,8 @@
-int main() {
+int main()
+{
     int choice;
-    do {
+    do
+    {
         printf("\n===== Welcome to ANNEX PAY =====\n");
         printf("1. Create Account\n");
         printf("2. Deposit Money\n");
@@ -14,19 +16,39 @@ int main() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        switch(choice) {
-            case 1: createAccount(); break;
-            case 2: depositMoney(); break;
-            case 3: withdrawMoney(); break;
-            case 4: checkBalance(); break;
-            case 5: resetPIN(); break;
-            case 6: viewTransactions(); break;
-            case 7: listAllAccounts(); break;
-            case 8: transferMoney(); break;
-            case 9: printf("\nThank you for using ANNEX PAY!\n"); break;
-            default: printf("Invalid Choice!\n");
+        switch (choice)
+        {
+        case 1:
+            createAccount();
+            break;
+        case 2:
+            depositMoney();
+            break;
+        case 3:
+            withdrawMoney();
+            break;
+        case 4:
+            checkBalance();
+            break;
+        case 5:
+            resetPIN();
+            break;
+        case 6:
+            viewTransactions();
+            break;
+        case 7:
+            listAllAccounts();
+            break;
+        case 8:
+            transferMoney();
+            break;
+        case 9:
+            printf("\nThank you for using ANNEX PAY!\n");
+            break;
+        default:
+            printf("Invalid Choice!\n");
         }
-    } while(choice != 9);
+    } while (choice != 9);
 
     return 0;
 }
