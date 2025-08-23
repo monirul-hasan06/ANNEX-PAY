@@ -1,7 +1,7 @@
 int main() {
     int choice;
     do {
-        printf("\n===== Online Banking System =====\n");
+        printf("\n===== Welcome to ANNEX PAY =====\n");
         printf("1. Create Account\n");
         printf("2. Deposit Money\n");
         printf("3. Withdraw Money\n");
@@ -23,7 +23,7 @@ int main() {
             case 6: viewTransactions(); break;
             case 7: listAllAccounts(); break;
             case 8: transferMoney(); break;
-            case 9: printf("\nThank you for using Online Banking System!\n"); break;
+            case 9: printf("\nThank you for using ANNEX PAY!\n"); break;
             default: printf("Invalid Choice!\n");
         }
     } while(choice != 9);
